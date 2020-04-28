@@ -1,7 +1,7 @@
 var ghpages = require('gh-pages');
 
 ghpages.publish(
-    '__sapper__/export',// <-- replace yourproject with your repo name
+    '__sapper__/export/SvelteUIElements',// <-- replace yourproject with your repo name
     {
         branch: 'gh-pages',
         repo: 'https://github.com/saxenanihal95/SvelteUIElements.git',
