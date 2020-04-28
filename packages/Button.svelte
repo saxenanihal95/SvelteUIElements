@@ -9,6 +9,7 @@
     background-image: none;
     background-color: #fff;
     border-color: #d9d9d9;
+    padding: 4px 15px;
   }
   button:hover {
     color: #1890ff;

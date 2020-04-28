@@ -1,46 +1,30 @@
+<script>
+  import Button from "../../../packages/Button.svelte";
+  import Layout from "../../../packages/Layout.svelte";
+</script>
+
 <style>
-	h1, figure, p {
-		text-align: center;
-		margin: 0 auto;
-	}
-
-	h1 {
-		font-size: 2.8em;
-		text-transform: uppercase;
-		font-weight: 700;
-		margin: 0 0 0.5em 0;
-	}
-
-	figure {
-		margin: 0 0 1em 0;
-	}
-
-	img {
-		width: 100%;
-		max-width: 400px;
-		margin: 0 0 1em 0;
-	}
-
-	p {
-		margin: 1em auto;
-	}
-
-	@media (min-width: 480px) {
-		h1 {
-			font-size: 4em;
-		}
-	}
+  .ButtonContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    border: 1px solid lightgray;
+    padding: 10px;
+  }
 </style>
 
 <svelte:head>
-	<title>Sapper project template</title>
+  <title>Sapper project template</title>
 </svelte:head>
-
-<h1>Great success!</h1>
-
-<figure>
-	<img alt='Borat' src='great-success.png'>
-	<figcaption>HIGH FIVE!</figcaption>
-</figure>
-
-<p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
+<Layout>
+  <div>
+    <p>Button</p>
+  </div>
+  <h1>Button Component</h1>
+  <div class="ButtonContainer">
+    <Button>Default</Button>
+    <Button type="Primary">Primary</Button>
+    <Button type="Dashed">Dashed</Button>
+    <Button type="Link">Link</Button>
+  </div>
+</Layout>
