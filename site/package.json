@@ -1,7 +1,7 @@
 {
-  "name": "TODO",
-  "description": "TODO",
-  "version": "0.0.1",
+  "name": "svelte-ui-elements",
+  "description": "A Svelte UI library",
+  "version": "0.0.5",
   "scripts": {
     "dev": "sapper dev",
     "build": "sapper build --legacy",
@@ -11,6 +11,10 @@
     "cy:open": "cypress open",
     "test": "run-p --race dev cy:run",
     "deploy": "npm run export && node ./scripts/gh-pages.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saxenanihal95/SvelteUIElements.git"
   },
   "dependencies": {
     "compression": "^1.7.1",

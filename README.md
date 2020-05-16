@@ -1,18 +1,18 @@
 ---
 
-# Svelte UI Elements 
+# Svelte UI Elements
 
 ## Get started
 
-Installation
+### Installation
 
-### Using npm:
+#### Using npm:
 
 ```bash
 npm i svelte-ui-elements
 ```
 
-### Using yarn:
+#### Using yarn:
 
 ```bash
 yarn add svelte-ui-elements
