@@ -1,10 +1,9 @@
 <style>
   .Layout {
-    width: 100wv;
+    width: 100vw;
     height: 100vh;
     display: flex;
     background-color: #ffffff;
-    padding: 10px 20px;
   }
 </style>
 

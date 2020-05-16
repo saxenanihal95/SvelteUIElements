@@ -7,10 +7,14 @@
 <style>
   .ButtonContainer {
     display: flex;
+    padding: 10px;
+    width: 100%;
+    flex-direction: column;
+  }
+  .Button {
+    display: flex;
     justify-content: space-between;
     width: 300px;
-    border: 1px solid lightgray;
-    padding: 10px;
   }
 </style>
 
@@ -20,12 +24,17 @@
 <Layout>
 
   <Menu
-    items={[{ key: 'button', name: 'Button Component' }, { key: 'layout', name: 'Layout Component' }]}
-    mode="horizontal" />
+    items={[{ key: 'button', name: 'Button Component' }]}
+    mode="vertical"
+    activeKey="button" />
   <div class="ButtonContainer">
-    <Button>Default</Button>
-    <Button type="Primary">Primary</Button>
-    <Button type="Dashed">Dashed</Button>
-    <Button type="Link">Link</Button>
+
+    <h2>Button Component</h2>
+    <div class="Button">
+      <Button>Default</Button>
+      <Button type="Primary">Primary</Button>
+      <Button type="Dashed">Dashed</Button>
+      <Button type="Link">Link</Button>
+    </div>
   </div>
 </Layout>
