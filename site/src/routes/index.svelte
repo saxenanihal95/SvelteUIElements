@@ -1,6 +1,7 @@
 <script>
   import Button from "../../../packages/Button.svelte";
   import Layout from "../../../packages/Layout.svelte";
+  import Menu from "../../../packages/Menu.svelte";
 </script>
 
 <style>
@@ -17,10 +18,10 @@
   <title>Sapper project template</title>
 </svelte:head>
 <Layout>
-  <div>
-    <p>Button</p>
-  </div>
-  <h1>Button Component</h1>
+
+  <Menu
+    items={[{ key: 'button', name: 'Button Component' }, { key: 'layout', name: 'Layout Component' }]}
+    mode="horizontal" />
   <div class="ButtonContainer">
     <Button>Default</Button>
     <Button type="Primary">Primary</Button>

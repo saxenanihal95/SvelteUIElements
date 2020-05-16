@@ -1,5 +1,6 @@
 <script>
   export let type = "";
+  export let rest = {};
 </script>
 
 <style>
@@ -38,7 +39,7 @@
 </style>
 
 <main>
-  <button class={type}>
+  <button class={type} {...rest}>
     <slot />
   </button>
 </main>
