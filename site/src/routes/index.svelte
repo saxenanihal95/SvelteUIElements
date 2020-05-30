@@ -1,40 +1,28 @@
 <script>
-  import Button from "../../../packages/Button.svelte";
-  import Layout from "../../../packages/Layout.svelte";
+  import ButtonDescription from "../components/ButtonDescription.svelte";
+  import Row from "../../../packages/Row.svelte";
+  import MenuDescription from "../components/MenuDescription.svelte";
   import Menu from "../../../packages/Menu.svelte";
+
+  const items = [
+    {
+      key: "button",
+      component: ButtonDescription,
+      name: "Button"
+    },
+    { key: "menu", component: MenuDescription, name: "Menu" }
+  ];
 </script>
 
 <style>
-  .ButtonContainer {
-    display: flex;
-    padding: 10px;
-    width: 100%;
-    flex-direction: column;
-  }
-  .Button {
-    display: flex;
-    justify-content: space-between;
-    width: 300px;
-  }
+
 </style>
 
 <svelte:head>
-  <title>Sapper project template</title>
+  <title>Svelte UI Elements</title>
 </svelte:head>
-<Layout>
+<Row>
 
-  <Menu
-    items={[{ key: 'button', name: 'Button Component' }]}
-    mode="vertical"
-    activeKey="button" />
-  <div class="ButtonContainer">
+  <Menu {items} mode="vertical" defaultActiveKey="button" />
 
-    <h2>Button Component</h2>
-    <div class="Button">
-      <Button>Default</Button>
-      <Button type="Primary">Primary</Button>
-      <Button type="Dashed">Dashed</Button>
-      <Button type="Link">Link</Button>
-    </div>
-  </div>
-</Layout>
+</Row>

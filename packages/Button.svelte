@@ -1,10 +1,15 @@
 <script>
+  import { bubble, listen } from "svelte/internal";
+  import { current_component } from "svelte/internal";
+  import { forwardEventsBuilder } from "../src/forwardEvents.js";
   export let type = "";
-  export let rest = {};
+
+  const forwardEvents = forwardEventsBuilder(current_component);
 </script>
 
 <style>
   button {
+    all: unset;
     background-image: none;
     border: 1px solid transparent;
     background-image: none;
@@ -13,14 +18,18 @@
     padding: 4px 15px;
   }
   button:hover {
-    color: #1890ff;
-    border-color: #1890ff;
+    color: #26c6da;
+    border-color: #26c6da;
+    cursor: pointer;
+  }
+  button:focus {
+    border-color: #26c6da;
     cursor: pointer;
   }
   .Primary {
     color: #fff;
-    background-color: #1890ff;
-    border-color: #1890ff;
+    background-color: #26c6da;
+    border-color: #26c6da;
   }
   .Primary:hover {
     color: #ffffff;
@@ -31,7 +40,7 @@
   }
   .Link {
     border: none;
-    color: #1890ff;
+    color: #26c6da;
   }
   .Link:hover {
     opacity: 0.7;
@@ -39,7 +48,7 @@
 </style>
 
 <main>
-  <button class={type} {...rest}>
+  <button use:forwardEvents class={type}>
     <slot />
   </button>
 </main>
