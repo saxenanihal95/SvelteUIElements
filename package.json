@@ -13,6 +13,7 @@
     "type": "git",
     "url": "https://github.com/saxenanihal95/SvelteUIElements.git"
   },
+  "homepage": "https://saxenanihal95.github.io/SvelteUIElements/",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^11.0.0",
     "@rollup/plugin-node-resolve": "^7.0.0",
