@@ -9,6 +9,10 @@
     "dev": "rollup -c -w",
     "start": "sirv public"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saxenanihal95/SvelteUIElements.git"
+  },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^11.0.0",
     "@rollup/plugin-node-resolve": "^7.0.0",
