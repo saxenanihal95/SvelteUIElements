@@ -9,6 +9,11 @@
   import Prism from "./PrismJS.svelte";
 
   let code_sample = `
+// import Menu Component
+
+import { Menu } from "svelte-ui-elements";
+
+
 import MenuItemOne from "./menuItems/One.svelte";
 import MenuItemTwo from "./menuItems/Two.svelte";
 

@@ -6,6 +6,11 @@
   import Prism from "./PrismJS.svelte";
 
   let code_sample = `
+// import Button Component
+
+import { Button } from "svelte-ui-elements";
+
+
 // Default Button
 <Button>Default</Button>
 

@@ -3,6 +3,7 @@
   import Row from "../../../packages/Row.svelte";
   import MenuDescription from "../components/MenuDescription.svelte";
   import Menu from "../../../packages/Menu.svelte";
+  import TableDescription from "../components/TableDescription.svelte";
 
   const items = [
     {
@@ -10,7 +11,8 @@
       component: ButtonDescription,
       name: "Button"
     },
-    { key: "menu", component: MenuDescription, name: "Menu" }
+    { key: "menu", component: MenuDescription, name: "Menu" },
+    { key: "table", component: TableDescription, name: "Table" }
   ];
 </script>
 
