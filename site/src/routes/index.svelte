@@ -1,8 +1,8 @@
 <script>
   import ButtonDescription from "../components/ButtonDescription.svelte";
-  import Row from "../../../packages/Row.svelte";
+  import Row from "../../../packages/Row/Row.svelte";
   import MenuDescription from "../components/MenuDescription.svelte";
-  import Menu from "../../../packages/Menu.svelte";
+  import Menu from "../../../packages/Menu/Menu.svelte";
   import TableDescription from "../components/TableDescription.svelte";
 
   const items = [

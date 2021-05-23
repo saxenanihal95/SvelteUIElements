@@ -1,7 +1,7 @@
 <script>
-  import Button from "../../../packages/Button.svelte";
-  import Table from "../../../packages/Table.svelte";
-  import Column from "../../../packages/Column.svelte";
+  import Button from "../../../packages/Button/Button.svelte";
+  import Table from "../../../packages/Table/Table.svelte";
+  import Column from "../../../packages/Column/Column.svelte";
 
   import Prism from "./PrismJS.svelte";
 

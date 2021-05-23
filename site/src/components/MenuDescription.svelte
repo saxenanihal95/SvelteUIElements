@@ -1,8 +1,8 @@
 <script>
-  import Menu from "../../../packages/Menu.svelte";
-  import Table from "../../../packages/Table.svelte";
+  import Menu from "../../../packages/Menu/Menu.svelte";
+  import Table from "../../../packages/Table/Table.svelte";
   import ButtonDescription from "./ButtonDescription.svelte";
-  import Column from "../../../packages/Column.svelte";
+  import Column from "../../../packages/Column/Column.svelte";
   import MenuItemOne from "./menuItems/One.svelte";
   import MenuItemTwo from "./menuItems/Two.svelte";
 
