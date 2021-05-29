@@ -1,3 +1,5 @@
+@import "../global.scss";
+
 .Menu {
   display: flex;
   cursor: pointer;
@@ -14,22 +16,20 @@
 
 .Vertical {
   flex-direction: column;
-  border-right: 1px solid #f0f0f0;
+  border-right: 1px solid $light-gray;
+  &__active {
+    color: $primary-color-light;
+    border-right: 2px solid $primary-color-dark;
+    background-color: $primary-color-light-variant;
+  }
 }
 
 .Horizontal {
-  border-bottom: 1px solid #f0f0f0;
-}
-
-.Horizontal .Active {
-  color: #26c6da;
-  border-bottom: 2px solid #0095a8;
-}
-
-.Vertical .Active {
-  color: #26c6da;
-  border-right: 2px solid #0095a8;
-  background-color: #e6f7ff;
+  border-bottom: 1px solid $light-gray;
+  &__active {
+    color: $primary-color-light;
+    border-bottom: 2px solid $primary-color-dark;
+  }
 }
 
 .MenuItem {

@@ -1,5 +1,7 @@
+@import "../global.scss";
+
 .Row {
   width: 100%;
   display: flex;
-  background-color: #ffffff;
+  background-color: $white;
 }

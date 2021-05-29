@@ -13,6 +13,8 @@
     activeComponent = items.find(({ key }) => key === defaultActiveKey);
     console.log({ key, activeComponent, defaultActiveKey });
   };
+
+  const className = mode === "vertical" ? " Vertical" : " Horizontal";
 </script>
 
 <style lang="scss" global>
@@ -22,11 +24,11 @@
 <div
   class="MenuContainer{mode === 'vertical' ? ' VerticalContainer' : ' HorizontalContainer'}"
   style={containerStyle}>
-  <div class="Menu{mode === 'vertical' ? ' Vertical' : ' Horizontal'}">
+  <div class="Menu{className}">
     {#each items as item}
       <div
         on:click={() => setIsActive(item.key)}
-        class="MenuItem{defaultActiveKey === item.key ? ' Active' : ''}">
+        class="MenuItem{defaultActiveKey === item.key ? ` ${className}__active` : ''}">
         {item.name}
       </div>
     {/each}

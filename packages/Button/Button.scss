@@ -1,42 +1,46 @@
+@import "../global.scss";
+
 button {
   all: unset;
   background-image: none;
   border: 1px solid transparent;
   background-image: none;
-  background-color: #fff;
-  border-color: #d9d9d9;
+  background-color: $white;
+  border-color: $light-gray;
   padding: 4px 15px;
   min-width: 50px;
   min-height: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
+  &:hover {
+    color: $primary-color;
+    border-color: $primary-color;
+    cursor: pointer;
+  }
+  &:focus {
+    border-color: $primary-color;
+    cursor: pointer;
+  }
 }
-button:hover {
-  color: #26c6da;
-  border-color: #26c6da;
-  cursor: pointer;
-}
-button:focus {
-  border-color: #26c6da;
-  cursor: pointer;
-}
+
 .Primary {
-  color: #fff;
-  background-color: #26c6da;
-  border-color: #26c6da;
+  color: $white;
+  background-color: $primary-color;
+  border-color: $primary-color;
+  &:hover {
+    color: $white;
+    opacity: 0.7;
+  }
 }
-.Primary:hover {
-  color: #ffffff;
-  opacity: 0.7;
-}
+
 .Dashed {
   border-style: dashed;
 }
 .Link {
   border: none;
-  color: #26c6da;
-}
-.Link:hover {
-  opacity: 0.7;
+  color: $primary-color;
+  &:hover {
+    opacity: 0.7;
+  }
 }

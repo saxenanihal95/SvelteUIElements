@@ -1,6 +1,8 @@
+@import "../global.scss";
+
 .Column {
   width: 100%;
   display: flex;
-  background-color: #ffffff;
+  background-color: $white;
   flex-direction: column;
 }

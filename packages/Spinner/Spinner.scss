@@ -1,8 +1,10 @@
+@import "../global.scss";
+
 .spinner {
-  border: 5px solid #26c6da; /* Light grey */
-  border-top: 5px solid #f3f3f3; /* Blue */
-  border-right: 5px solid #f3f3f3; /* Blue */
-  border-bottom: 5px solid #f3f3f3;
+  border: 5px solid $primary-color; /* Light grey */
+  border-top: 5px solid $gray; /* Blue */
+  border-right: 5px solid $gray; /* Blue */
+  border-bottom: 5px solid $gray;
   border-radius: 50%;
   width: 15px;
   height: 15px;

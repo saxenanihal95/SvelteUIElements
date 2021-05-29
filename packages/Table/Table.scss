@@ -1,3 +1,5 @@
+@import "../global.scss";
+
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
@@ -6,7 +8,7 @@ table {
 
 td,
 th {
-  border: 1px solid #dddddd;
+  border: 1px solid $gray-variant;
   text-align: left;
   padding: 8px;
 }
