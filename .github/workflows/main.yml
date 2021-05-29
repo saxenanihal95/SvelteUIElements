@@ -31,6 +31,6 @@ jobs:
 
       # Deploy to github pages
       - name: Run a one-line script
-        run: npm run deploy
+        run: cd site && npm run deploy
         
 
