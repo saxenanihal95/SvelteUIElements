@@ -46,7 +46,7 @@ import { Button } from "svelte-ui-elements";
   .Button {
     display: flex;
     justify-content: space-between;
-    width: 400px;
+    min-width: 250px;
     margin-bottom: 20px;
   }
 </style>
@@ -61,6 +61,10 @@ import { Button } from "svelte-ui-elements";
     <Button type="Primary">Primary</Button>
     <Button type="Dashed">Dashed</Button>
     <Button type="Link">Link</Button>
+  </div>
+  <h3 style="margin-bottom: 20px">Button Loading</h3>
+  <div class="Button">
+    <Button loading type="Primary">Primary</Button>
   </div>
   <Prism language="js" code={code_sample} header="Sample Code" />
   <div>
