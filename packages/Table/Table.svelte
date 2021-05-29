@@ -7,6 +7,7 @@
       .reduce((r, k) => ((r[k] = o[k]), r), {});
   const sortedRows = rows.map(r => sortObject(r));
   const sortedColums = columns.sort((a, b) => a.key.localeCompare(b.key));
+  console.log({ sortedRows, sortedColums });
 </script>
 
 <style lang="scss" global>
@@ -21,7 +22,7 @@
         <th>{column.title}</th>
       {/each}
     </tr>
-    {#each rows as row}
+    {#each sortedRows as row}
       <tr>
         {#each Object.keys(row) as rowKey}
           <td>{row[rowKey]}</td>

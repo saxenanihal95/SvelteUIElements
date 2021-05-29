@@ -4,7 +4,7 @@
   import Column from "../../../packages/Column/Column.svelte";
   import Rating from "../../../packages/Rating/Rating.svelte";
   import Prism from "./PrismJS.svelte";
-  import code_sample from "../code_samples/button";
+  import code_sample from "../code_samples/rating";
 
   const columns = [
     { key: "property", title: "Property" },
@@ -41,19 +41,12 @@
 
 <Column style="padding: 20px">
 
-  <h1 style="margin-bottom: 20px">Button Component</h1>
+  <h1 style="margin-bottom: 20px">Rating Component</h1>
   <h2 style="margin-bottom: 20px">Examples</h2>
-  <h3 style="margin-bottom: 20px">Types of Button</h3>
   <div class="Button">
-    <Button>Default</Button>
-    <Button type="Primary">Primary</Button>
-    <Button type="Dashed">Dashed</Button>
-    <Button type="Link">Link</Button>
+    <Rating value={3} />
   </div>
-  <h3 style="margin-bottom: 20px">Button Loading</h3>
-  <div class="Button">
-    <Button loading type="Primary">Primary</Button>
-  </div>
+
   <Prism language="js" code={code_sample} header="Sample Code" />
   <div>
     <h2>API</h2>

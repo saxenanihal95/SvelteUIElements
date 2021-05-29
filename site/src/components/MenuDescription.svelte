@@ -5,47 +5,8 @@
   import Column from "../../../packages/Column/Column.svelte";
   import MenuItemOne from "./menuItems/One.svelte";
   import MenuItemTwo from "./menuItems/Two.svelte";
-
+  import code_sample from "../code_samples/menu";
   import Prism from "./PrismJS.svelte";
-
-  let code_sample = `
-// import Menu Component
-
-import { Menu } from "svelte-ui-elements";
-
-
-import MenuItemOne from "./menuItems/One.svelte";
-import MenuItemTwo from "./menuItems/Two.svelte";
-
-const items = [
-  {
-    key: "item1",
-    component: MenuItemOne,
-    name: "MenuItemOne"
-  },
-  {
-    key: "item2",
-    component: MenuItemTwo,
-    name: "MenuItemTwo"
-  }
-];
-
-// Vertical Menu
-<Menu
-  {items}
-  mode="vertical"
-  defaultActiveKey="item1"
-  containerStyle="margin-bottom: 20px" 
-/>
-
-// Horizontal Menu
-<Menu
-  {items}
-  mode="horizontal"
-  defaultActiveKey="item1"
-  containerStyle="margin-bottom: 20px" 
-/>
-  `;
 
   const items = [
     {

@@ -1,5 +1,6 @@
 <script>
   import Button from "../Button/Button.svelte";
+  import { onMount } from "svelte";
   export let items = [];
   export let mode = "horizontal";
   export let containerStyle = {};
@@ -9,11 +10,13 @@
   let activeComponent = items.find(({ key }) => key === defaultActiveKey);
 
   const setIsActive = key => {
+    activeComponent = items.find(({ key: k }) => key === k);
     defaultActiveKey = key;
-    activeComponent = items.find(({ key }) => key === defaultActiveKey);
-    console.log({ key, activeComponent, defaultActiveKey });
   };
 
+  const containerClassName = `MenuContainer ${
+    mode === "vertical" ? "VerticalContainer" : "HorizontalContainer"
+  }`;
   const className = mode === "vertical" ? " Vertical" : " Horizontal";
 </script>
 
@@ -21,9 +24,7 @@
   @import "./Menu.scss";
 </style>
 
-<div
-  class="MenuContainer{mode === 'vertical' ? ' VerticalContainer' : ' HorizontalContainer'}"
-  style={containerStyle}>
+<div class={containerClassName} style={containerStyle}>
   <div class="Menu{className}">
     {#each items as item}
       <div
@@ -34,5 +35,6 @@
     {/each}
 
   </div>
-  <svelte:component this={activeComponent && activeComponent.component} />
+  <svelte:component
+    this={(activeComponent && activeComponent.component) || false} />
 </div>

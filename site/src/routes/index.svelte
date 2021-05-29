@@ -4,6 +4,7 @@
   import MenuDescription from "../components/MenuDescription.svelte";
   import Menu from "../../../packages/Menu/Menu.svelte";
   import TableDescription from "../components/TableDescription.svelte";
+  import RatingDescription from "../components/RatingDescription.svelte";
 
   const items = [
     {
@@ -12,7 +13,8 @@
       name: "Button"
     },
     { key: "menu", component: MenuDescription, name: "Menu" },
-    { key: "table", component: TableDescription, name: "Table" }
+    { key: "table", component: TableDescription, name: "Table" },
+    { key: "rating", component: RatingDescription, name: "Rating" }
   ];
 </script>
 

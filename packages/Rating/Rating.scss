@@ -1,0 +1,12 @@
+@import "../global.scss";
+
+.rating {
+  font-size: 25px !important;
+  &__checked {
+    color: #fadb14;
+  }
+
+  &__unchecked {
+    color: $light-gray;
+  }
+}
