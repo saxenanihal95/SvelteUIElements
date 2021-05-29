@@ -15,17 +15,10 @@
 
   const rows = [
     {
-      property: "type",
-      description:
-        "can be set to primary, dashed, link or omitted (meaning default)",
-      type: "String",
-      default: "primary"
-    },
-    {
-      property: "loading",
-      description: "to show loader",
-      type: "Boolean",
-      default: "false"
+      property: "value",
+      description: "can be set from 0 to 5",
+      type: "Number",
+      default: "0"
     }
   ];
 </script>
