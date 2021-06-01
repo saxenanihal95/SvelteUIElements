@@ -2,16 +2,9 @@
   import Button from "../../../packages/Button/Button.svelte";
   import Table from "../../../packages/Table/Table.svelte";
   import Column from "../../../packages/Column/Column.svelte";
-  import Rating from "../../../packages/Rating/Rating.svelte";
   import Prism from "./PrismJS.svelte";
   import code_sample from "../code_samples/button";
-
-  const columns = [
-    { key: "property", title: "Property" },
-    { key: "description", title: "Description" },
-    { key: "type", title: "Type" },
-    { key: "default", title: "Default Value" }
-  ];
+  import { columns } from "../utils/helpers";
 
   const rows = [
     {

@@ -1,0 +1,99 @@
+@import "../global.scss";
+
+.timeline {
+  /* (A1) RELATIVE POSITION NECESSARY TO PROPERLY POSITION TIMELINE LATER */
+  position: relative;
+  /* (A2) RESERVE MORE SPACE TO THE LEFT FOR THE TIMELINE */
+  padding: 10px 10px 10px 50px;
+  /* (A3) OPTIONAL WIDTH RESTRICTION */
+  max-width: 400px;
+  &::before {
+    /* (B1) DRAW THE TIMELINE */
+    content: "";
+    width: 5px;
+    background-color: $primary-color-dark;
+    /* (B2) POSITION IT TO THE LEFT */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 15px;
+  }
+  &__item {
+    padding: 20px 30px;
+    background-color: $primary-color-light;
+    position: relative;
+    border-radius: 6px;
+    margin-bottom: 10px;
+
+    /* (F) ADD A CIRCLE ON THE TIMELINE TO INDICATE AN EVENT */
+    &::after {
+      content: "";
+      background: $white;
+      border: 4px solid $primary-color-dark;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      position: absolute;
+      top: 20%;
+      left: -44px;
+    }
+  }
+}
+
+.alternate_timeline {
+  box-sizing: border-box;
+  /* (A1) RELATIVE POSITION IS NECESSARY... */
+  position: relative;
+  /* (A2) WIDTH RESTRICTION & CENTER ON PAGE */
+  max-width: 600px;
+  margin: 0 auto;
+  /* (B) USE ::BEFORE TO DRAW VERTICAL TIMELINE */
+  &::before {
+    /* (B1) DRAW THE VERTICAL TIMELIME */
+    content: "";
+    width: 5px;
+    background-color: $primary-color-dark;
+    /* (B2) SET IN MIDDLE OF CONTAINER */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+  }
+  &__item {
+    box-sizing: border-box;
+    position: relative;
+    left: 0; /* DEFAULT TO LEFT, USE .RIGHT BELOW TO PLACE EVENT ON THE RIGHT */
+    padding: 20px 30px;
+    width: 45%;
+    background-color: $primary-color-light;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    &::after {
+      content: "";
+      background: $white;
+      border: 4px solid $primary-color-dark;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      position: absolute;
+      top: 20%;
+      left: 106%;
+    }
+  }
+  /* (F) ADD A CIRCLE ON THE TIMELINE TO INDICATE AN EVENT */
+  &__right {
+    left: 55%;
+    &::after {
+      content: "";
+      background: $white;
+      border: 4px solid $primary-color-dark;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      position: absolute;
+      top: 20%;
+      left: auto;
+      right: 103%;
+    }
+  }
+}

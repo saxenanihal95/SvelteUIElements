@@ -6,6 +6,7 @@
   import MenuItemOne from "./menuItems/One.svelte";
   import MenuItemTwo from "./menuItems/Two.svelte";
   import code_sample from "../code_samples/table";
+  import { columns } from "../utils/helpers";
   import Prism from "./PrismJS.svelte";
 
   const items = [
@@ -19,13 +20,6 @@
       component: MenuItemTwo,
       name: "MenuItemTwo"
     }
-  ];
-
-  const columns = [
-    { key: "property", title: "Property" },
-    { key: "description", title: "Description" },
-    { key: "type", title: "Type" },
-    { key: "default", title: "Default Value" }
   ];
 
   const rows = [
