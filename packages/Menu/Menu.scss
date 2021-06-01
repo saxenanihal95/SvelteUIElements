@@ -18,16 +18,16 @@
   flex-direction: column;
   border-right: 1px solid $light-gray;
   &__active {
-    color: $primary-color-light;
+    color: $primary-color;
     border-right: 2px solid $primary-color-dark;
-    background-color: $primary-color-light-variant;
+    background-color: $primary-color-light;
   }
 }
 
 .Horizontal {
   border-bottom: 1px solid $light-gray;
   &__active {
-    color: $primary-color-light;
+    color: $primary-color;
     border-bottom: 2px solid $primary-color-dark;
   }
 }

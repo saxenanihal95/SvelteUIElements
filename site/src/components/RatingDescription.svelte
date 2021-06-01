@@ -5,13 +5,7 @@
   import Rating from "../../../packages/Rating/Rating.svelte";
   import Prism from "./PrismJS.svelte";
   import code_sample from "../code_samples/rating";
-
-  const columns = [
-    { key: "property", title: "Property" },
-    { key: "description", title: "Description" },
-    { key: "type", title: "Type" },
-    { key: "default", title: "Default Value" }
-  ];
+  import { columns } from "../utils/helpers";
 
   const rows = [
     {
