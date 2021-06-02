@@ -1,11 +1,11 @@
 <script>
-  import ButtonDescription from "../components/ButtonDescription.svelte";
+  import ButtonDescription from "../components/Button/ButtonDescription.svelte";
   import Row from "../../../packages/Row/Row.svelte";
-  import MenuDescription from "../components/MenuDescription.svelte";
+  import MenuDescription from "../components/Menu/MenuDescription.svelte";
   import Menu from "../../../packages/Menu/Menu.svelte";
-  import TableDescription from "../components/TableDescription.svelte";
-  import RatingDescription from "../components/RatingDescription.svelte";
-  import TimelineDescription from "../components/TimelineDescription.svelte";
+  import TableDescription from "../components/Table/TableDescription.svelte";
+  import RatingDescription from "../components/Rating/RatingDescription.svelte";
+  import TimelineDescription from "../components/Timeline/TimelineDescription.svelte";
 
   const items = [
     {

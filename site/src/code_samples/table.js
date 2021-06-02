@@ -4,37 +4,34 @@ import { Table } from "svelte-ui-elements";
 
 // key property of columns will be mapped to rows object key name
 const columns = [
-    { key: "property", title: "Property" },
-    { key: "description", title: "Description" },
-    { key: "type", title: "Type" },
-    { key: "default", title: "default" }
-  ];
+  {
+    title: "Name",
+    dataIndex: "name",
+    key: "name"
+  },
+  {
+    title: "Age",
+    dataIndex: "age",
+    key: "age"
+  },
+  {
+    title: "Address",
+    dataIndex: "address",
+    key: "address"
+  }
+];
 
 const rows = [
-    {
-      property: "items",
-      description: "Array of item of Menu",
-      type: "Array",
-      default: "[ ]"
-    },
-    {
-      property: "mode",
-      description: "Mode of the menu can be horizontal or vertical",
-      type: "String",
-      default: "horizontal"
-    },
-    {
-      property: "defaultActiveKey",
-      description: "The key which is active by default",
-      type: "String",
-      default: '""'
-    },
-    {
-      property: "containerStyle",
-      description: "To provide sytle to the container of Menu",
-      type: "String",
-      default: '""'
-    }
+  {
+    name: "Micheal",
+    age: 45,
+    address: "10 Street Down West"
+  },
+  {
+    name: "Johnny",
+    age: 23,
+    address: "9 Street Down East"
+  }
 ];
 
 <Table {rows} {columns} />
