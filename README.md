@@ -35,3 +35,8 @@ Install svelte-ui-elements with yarn
 ## Authors
 
 - [@saxenanihal95](https://www.github.com/saxenanihal95)
+
+## Acknowledgements
+
+- [W3Schools How To](https://www.w3schools.com/howto/default.asp)
+- [Simple Pure CSS Responsive Timeline](https://code-boxx.com/simple-pure-css-timeline)
