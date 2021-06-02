@@ -1,26 +1,11 @@
 <script>
-  import Menu from "../../../packages/Menu/Menu.svelte";
-  import Table from "../../../packages/Table/Table.svelte";
-  import ButtonDescription from "./ButtonDescription.svelte";
-  import Column from "../../../packages/Column/Column.svelte";
-  import MenuItemOne from "./menuItems/One.svelte";
-  import MenuItemTwo from "./menuItems/Two.svelte";
-  import code_sample from "../code_samples/table";
-  import { columns } from "../utils/helpers";
-  import Prism from "./PrismJS.svelte";
-
-  const items = [
-    {
-      key: "item1",
-      component: MenuItemOne,
-      name: "MenuItemOne"
-    },
-    {
-      key: "item2",
-      component: MenuItemTwo,
-      name: "MenuItemTwo"
-    }
-  ];
+  import Menu from "../../../../packages/Menu/Menu.svelte";
+  import Table from "../../../../packages/Table/Table.svelte";
+  import ButtonDescription from "../Button/ButtonDescription.svelte";
+  import Column from "../../../../packages/Column/Column.svelte";
+  import code_sample from "../../code_samples/table";
+  import { columns } from "../../utils/helpers";
+  import Prism from "../PrismJS.svelte";
 
   const rows = [
     {
@@ -68,10 +53,6 @@
     }
   ];
 </script>
-
-<style>
-
-</style>
 
 <Column style="padding: 20px">
 

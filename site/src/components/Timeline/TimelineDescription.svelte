@@ -1,11 +1,11 @@
 <script>
-  import Table from "../../../packages/Table/Table.svelte";
-  import Column from "../../../packages/Column/Column.svelte";
-  import Rating from "../../../packages/Rating/Rating.svelte";
-  import Timeline from "../../../packages/TimeLine/Timeline.svelte";
-  import Prism from "./PrismJS.svelte";
-  import code_sample from "../code_samples/timeline";
-  import { columns } from "../utils/helpers";
+  import Table from "../../../../packages/Table/Table.svelte";
+  import Column from "../../../../packages/Column/Column.svelte";
+  import Rating from "../../../../packages/Rating/Rating.svelte";
+  import Timeline from "../../../../packages/TimeLine/Timeline.svelte";
+  import Prism from "../PrismJS.svelte";
+  import code_sample from "../../code_samples/timeline";
+  import { columns } from "../../utils/helpers";
 
   const rows = [
     {

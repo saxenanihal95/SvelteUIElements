@@ -1,13 +1,13 @@
 <script>
-  import Menu from "../../../packages/Menu/Menu.svelte";
-  import Table from "../../../packages/Table/Table.svelte";
-  import ButtonDescription from "./ButtonDescription.svelte";
-  import Column from "../../../packages/Column/Column.svelte";
-  import MenuItemOne from "./menuItems/One.svelte";
-  import MenuItemTwo from "./menuItems/Two.svelte";
-  import code_sample from "../code_samples/menu";
-  import { columns } from "../utils/helpers";
-  import Prism from "./PrismJS.svelte";
+  import Menu from "../../../../packages/Menu/Menu.svelte";
+  import Table from "../../../../packages/Table/Table.svelte";
+  import ButtonDescription from "../Button/ButtonDescription.svelte";
+  import Column from "../../../../packages/Column/Column.svelte";
+  import MenuItemOne from "./One.svelte";
+  import MenuItemTwo from "./Two.svelte";
+  import code_sample from "../../code_samples/menu";
+  import { columns } from "../../utils/helpers";
+  import Prism from "../PrismJS.svelte";
 
   const items = [
     {
