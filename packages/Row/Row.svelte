@@ -2,6 +2,6 @@
   @import "./Row.scss";
 </style>
 
-<div class="Row">
+<div class="Row" {...$$props}>
   <slot />
 </div>
