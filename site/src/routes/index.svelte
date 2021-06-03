@@ -7,6 +7,7 @@
   import RatingDescription from "../components/Rating/RatingDescription.svelte";
   import TimelineDescription from "../components/Timeline/TimelineDescription.svelte";
   import CardDescription from "../components/Card/CardDescription.svelte";
+  import ListDescription from "../components/List/ListDescription.svelte";
 
   const items = [
     {
@@ -18,7 +19,8 @@
     { key: "table", component: TableDescription, name: "Table" },
     { key: "rating", component: RatingDescription, name: "Rating" },
     { key: "timeline", component: TimelineDescription, name: "Timeline" },
-    { key: "card", component: CardDescription, name: "Card" }
+    { key: "card", component: CardDescription, name: "Card" },
+    { key: "list", component: ListDescription, name: "List" }
   ];
 </script>
 
