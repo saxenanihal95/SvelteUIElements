@@ -1,0 +1,33 @@
+@import "../global.scss";
+
+.list-container {
+  width: 100%;
+}
+
+.list {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+  li {
+    // border-bottom: 1px solid #ddd; /* Add a thin border to each list item */
+    border-color: $light-gray;
+    border-style: solid;
+    border-width: 1px 1px 0px 1px;
+    margin-top: -1px; /* Prevent double borders */
+    padding: 12px; /* Add some padding */
+    &:last-child {
+      border-bottom: 1px solid $light-gray;
+    }
+  }
+}
+
+.list-header {
+  padding: 12px; /* Add some padding */
+  border: 1px solid $light-gray;
+}
+
+.list-footer {
+  padding: 12px; /* Add some padding */
+  border: 1px solid $light-gray;
+  border-top: 0px;
+}

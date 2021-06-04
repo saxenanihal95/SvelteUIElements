@@ -1,28 +1,26 @@
----
-
 # Svelte UI Elements
 
-## Get started
+A Svelte UI library
 
-### Documentation
+## Documentation
 
-https://saxenanihal95.github.io/SvelteUIElements
+[Documentation](https://saxenanihal95.github.io/SvelteUIElements)
 
-### Installation
+## Installation
 
-#### Using npm:
-
-```bash
-npm i svelte-ui-elements
-```
-
-#### Using yarn:
+Install svelte-ui-elements with npm
 
 ```bash
-yarn add svelte-ui-elements
+  npm install svelte-ui-elements
 ```
 
-### Usage:
+Install svelte-ui-elements with yarn
+
+```bash
+  yarn add svelte-ui-elements
+```
+
+## Usage/Examples
 
 ```js
 <script>
@@ -32,5 +30,13 @@ yarn add svelte-ui-elements
 <main>
   <Button>test</Button>
 </main>
-
 ```
+
+## Authors
+
+- [@saxenanihal95](https://www.github.com/saxenanihal95)
+
+## Acknowledgements
+
+- [W3Schools How To](https://www.w3schools.com/howto/default.asp)
+- [Simple Pure CSS Responsive Timeline](https://code-boxx.com/simple-pure-css-timeline)
