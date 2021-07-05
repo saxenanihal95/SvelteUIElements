@@ -9,6 +9,7 @@
   import CardDescription from "../components/Card/CardDescription.svelte";
   import ListDescription from "../components/List/ListDescription.svelte";
   import SnackbarDescription from "../components/Snackbar/SnackbarDescription.svelte";
+  import TooltipDescription from "../components/Tooltip/TooltipDescription.svelte";
 
   const items = [
     {
@@ -23,6 +24,7 @@
     { key: "card", component: CardDescription, name: "Card" },
     { key: "list", component: ListDescription, name: "List" },
     { key: "snackbar", component: SnackbarDescription, name: "Snackbar" },
+    { key: "tooltip", component: TooltipDescription, name: "Tooltip" },
   ];
 </script>
 
