@@ -1,0 +1,13 @@
+@import "../global.scss";
+
+.progress {
+  width: 100%;
+  background-color: $light-gray;
+  border-radius: 100px;
+}
+
+.bar {
+  height: 8px;
+  background-color: $primary-color;
+  border-radius: 100px;
+}
