@@ -1,7 +1,7 @@
 <script>
   import Tooltip from "../../../../packages/Tooltip/Tooltip.svelte";
   import code_sample from "../../code_samples/tooltip";
-  import { DEFAULT_VALUES } from "../../utils/constants";
+  import { DEFAULT_VALUES, TYPES } from "../../utils/constants";
 
   import Description from "../Description.svelte";
   import Section from "../Section.svelte";
@@ -10,7 +10,7 @@
     {
       property: "title",
       description: "title of tooltip",
-      type: "String",
+      type: TYPES.STRING,
       default: DEFAULT_VALUES.EMPTY_STRING,
     },
   ];

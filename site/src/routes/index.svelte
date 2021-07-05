@@ -10,6 +10,7 @@
   import ListDescription from "../components/List/ListDescription.svelte";
   import SnackbarDescription from "../components/Snackbar/SnackbarDescription.svelte";
   import TooltipDescription from "../components/Tooltip/TooltipDescription.svelte";
+  import ProgressBarDescription from "../components/ProgressBar/ProgressBarDescription.svelte";
 
   const items = [
     {
@@ -25,6 +26,11 @@
     { key: "list", component: ListDescription, name: "List" },
     { key: "snackbar", component: SnackbarDescription, name: "Snackbar" },
     { key: "tooltip", component: TooltipDescription, name: "Tooltip" },
+    {
+      key: "progressbar",
+      component: ProgressBarDescription,
+      name: "Progress Bar",
+    },
   ];
 </script>
 
