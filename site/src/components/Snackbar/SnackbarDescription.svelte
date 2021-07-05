@@ -2,7 +2,7 @@
   import Button from "../../../../packages/Button/Button.svelte";
   import Snackbar from "../../../../packages/Snackbar/Snackbar.svelte";
   import code_sample from "../../code_samples/snackbar";
-  import { DEFAULT_VALUES } from "../../utils/constants";
+  import { DEFAULT_VALUES, TYPES } from "../../utils/constants";
 
   import Description from "../Description.svelte";
   import Section from "../Section.svelte";
@@ -11,13 +11,13 @@
     {
       property: "description",
       description: "content of snackbar",
-      type: "String",
+      type: TYPES.STRING,
       default: DEFAULT_VALUES.EMPTY_STRING,
     },
     {
       property: "visible",
       description: "to show and hide snackbar",
-      type: "Boolean",
+      type: TYPES.BOOLEAN,
       default: "false",
     },
   ];

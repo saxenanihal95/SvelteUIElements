@@ -1,3 +1,5 @@
+@import "../global.scss";
+
 /* Tooltip container */
 .tooltip {
   position: relative;
@@ -5,8 +7,8 @@
   &__tooltiptext {
     visibility: hidden;
     width: 120px;
-    background-color: #555;
-    color: #fff;
+    background-color: $dark;
+    color: $white;
     text-align: center;
     padding: 5px 0;
     border-radius: 6px;
