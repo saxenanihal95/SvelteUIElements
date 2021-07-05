@@ -1,7 +1,6 @@
 <script>
   import Rating from "../../../../packages/Rating/Rating.svelte";
   import code_sample from "../../code_samples/rating";
-  import { columns } from "../../utils/helpers";
 
   import Description from "../Description.svelte";
   import Section from "../Section.svelte";
@@ -11,8 +10,8 @@
       property: "value",
       description: "can be set from 0 to 5",
       type: "Number",
-      default: "0"
-    }
+      default: "0",
+    },
   ];
 </script>
 
